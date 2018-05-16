@@ -1,11 +1,13 @@
-## Welcome to Web Page
+## Welcome
 
 ### Project Tuva: Richard Feynman’s Messenger Lecture Series
 [Project Tuva](https://www.microsoft.com/en-us/research/project/tuva-richard-feynman/)
 
-Using [editor on GitHub](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) to maintain and preview the content for  website in Markdown files.
 
-After commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in site, from the content in  Markdown files.
+
+### Editor
+1. Edit page using [Editor](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) 
+2. After commit, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages
 
 ### Markdown
 
