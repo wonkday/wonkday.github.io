@@ -6,10 +6,10 @@
 ### Unix commands
 ```markdown
 echo 'BM_BATCH_ITEM' | sed -e 's/$/_/' -e 's/\([^_]\)[^_]*_/\1/g'
-\nBBI
+ BBI
 
 echo 'This is a test sentence' | sed -e 's/$/ /' -e 's/\([^ ]\)[^ ]* /\1/g' -e 's/^ *//'
-\nTiats
+ Tiats
 ```
 
 ### Editor
