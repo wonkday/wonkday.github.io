@@ -3,7 +3,12 @@
 ### Project Tuva: Richard Feynman’s Messenger Lecture Series
 [Project Tuva](https://www.microsoft.com/en-us/research/project/tuva-richard-feynman/)
 
+### Unix commands
+echo 'BM_BATCH_ITEM' | sed -e 's/$/_/' -e 's/\([^_]\)[^_]*_/\1/g'
+BBI
 
+echo 'This is a test sentence' | sed -e 's/$/ /' -e 's/\([^ ]\)[^ ]* /\1/g' -e 's/^ *//'
+Tiats
 
 ### Editor
 1. Edit page using [Editor](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) 
