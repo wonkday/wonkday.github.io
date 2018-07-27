@@ -4,11 +4,13 @@
 [Project Tuva](https://www.microsoft.com/en-us/research/project/tuva-richard-feynman/)
 
 ### Unix commands
+```markdown
 echo 'BM_BATCH_ITEM' | sed -e 's/$/_/' -e 's/\([^_]\)[^_]*_/\1/g'
-BBI
+\nBBI
 
 echo 'This is a test sentence' | sed -e 's/$/ /' -e 's/\([^ ]\)[^ ]* /\1/g' -e 's/^ *//'
-Tiats
+\nTiats
+```
 
 ### Editor
 1. Edit page using [Editor](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) 
