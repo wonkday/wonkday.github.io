@@ -12,6 +12,17 @@ echo 'This is a test sentence' | sed -e 's/$/ /' -e 's/\([^ ]\)[^ ]* /\1/g' -e '
  Tiats
 ```
 
+## Shell Scripts
+### Get All certs from store
+```markdown
+export KEYTOOL=/usr/local/jdk/bin/keytool
+export KEYSTORE=/usr/local/jdk/jre/lib/security/cacerts
+IFS=$'\n' 
+for cert in `${KEYTOOL} -list -keystore ${KEYSTORE} -storepass changeit | grep trustedCertEntry | grep -Eo "^[^,]*"`;do
+    `${KEYTOOL} -exportcert -keystore ${KEYSTORE} -alias ${cert}' -file ./certs/${cert}.crt -storepass changeit`
+done
+```
+
 ### Editor
 1. Edit page using [Editor](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) 
 2. After commit, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages
