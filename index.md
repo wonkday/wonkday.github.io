@@ -23,6 +23,13 @@ for cert in `${KEYTOOL} -list -keystore ${KEYSTORE} -storepass changeit | grep t
 done
 ```
 
+## AWS Commands
+### Get All Running EC2 instances
+```markdown
+aws ec2 describe-instances --query "Reservations[*].Instances[*].{PublicIP:PublicIpAddress,Name:Tags[?Key=='Name']|[0].Value,Status:State.Name}" --filters Name=instance-state-name,Values=running --output table
+```
+
+
 ### Editor
 1. Edit page using [Editor](https://github.com/wonkday/wonkday.github.io/edit/master/index.md) 
 2. After commit, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages
