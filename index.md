@@ -5,6 +5,9 @@
 
 ### Unix commands
 ```markdown
+# file files in top level dir, created 30 day ago
+find . -maxdepth 1 -type f -mtime +30
+
 echo 'BM_BATCH_ITEM' | sed -e 's/$/_/' -e 's/\([^_]\)[^_]*_/\1/g'
  BBI
 
