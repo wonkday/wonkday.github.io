@@ -8,6 +8,9 @@
 # file files in top level dir, created 30 day ago
 find . -maxdepth 1 -type f -mtime +30
 
+# Find files less than 1 character size
+find -name 'purge_ids_2025*' -type f -size -2c -exec stat --printf="%s %n\n" {} +
+
 echo 'BM_BATCH_ITEM' | sed -e 's/$/_/' -e 's/\([^_]\)[^_]*_/\1/g'
  BBI
 
